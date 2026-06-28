@@ -114,7 +114,7 @@ async def join_request(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         await asyncio.sleep(0.6)
 
-        keyboard = [[InlineKeyboardButton("🚀 START BOT", url="https://t.me/Blackcrown7bot")]]
+        keyboard = [[InlineKeyboardButton("🚀 START BOT", url="https://t.me/Blackcrown7bot?start=welcome")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
 
         await send_with_retry(context.bot, user_id, lambda: context.bot.send_message(
